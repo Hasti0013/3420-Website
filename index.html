@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio </title>
+    
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Your custom styles -->
+
+    <style>
+        body {
+            background: linear-gradient(to right, #6abbed, #ba99ef); /* Light blue to light purple gradient */
+            font-family: Arial, sans-serif; /* Optional: change font */
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+            margin: 0; /* Remove default body margin */
+        }
+        
+        .navbar {
+            background-color: #007bff; /* Blue background for navbar */
+            margin-bottom: 5; /* Adjust bottom margin */
+            padding: 10px 0; /* Adjust padding to shift items upwards */
+        }
+
+        .navbar-nav {
+            flex-direction: row; /* Align items in a row */
+            justify-content: center; /* Center align items */
+            width: 100%; /* Take full width */
+        }
+
+        .nav-link {
+            color: white !important; /* Change text color to white */
+            margin: 0 15px; /* Add margin between nav items */
+        }
+
+        .nav-link:hover {
+            color: #28a745 !important; /* Green color on hover */
+        }
+
+        .navbar-brand {
+            margin-left: 20px; /* Shift the brand slightly to the right */
+        }
+
+        h1, p {
+            color: #333333; /* Dark grey text color */
+        }
+
+        .btn-primary {
+            background-color: #28a745; /* Green button color */
+            border-color: #28a745;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            text-align: center; /* Center the content */
+        }
+
+        .project-card img {
+            max-width: 50%; /* Decreased the logo size */
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .project-card h5 {
+            font-size: 1.25rem; /* Smaller font size for the title */
+        }
+
+        .project-card p {
+            font-size: 0.9rem; /* Smaller font size for the text */
+            color: #555; /* Lighter text color */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand mx-auto" href="#">My Portfolio</a> <!-- Center the brand -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container mt-5">
+            <h1 class="text-center">Welcome to My Portfolio</h1>
+            <p class="lead text-center">Hi, I'm Hasti Rathod. This is a simple Bootstrap-powered webpage showcasing my work.</p>
+
+            <!-- Add an image -->
+            <div class="text-center">
+                <img src="img.jpg" alt="My Image" class="img-fluid" style="max-width: 300px;">
+            </div>
+
+            <!-- Removed Learn More button -->
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">I am Hasti Rathod, a passionate software engineer with experience in web development, full-stack technologies, and collaborative platforms. I love working on innovative projects that solve real-world problems.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center">Project</h2>
+            <div class="row mt-4">
+                <!-- Project 2: Meet Me Halfway -->
+                <div class="col-md-6 offset-md-3"> <!-- Center the project card -->
+                    <div class="project-card">
+                        <img src="Screenshot 2024-10-22 212344.png" alt="Meet Me Halfway">
+                        <h5>Meet Me Halfway</h5>
+                        <p>
+                            <strong>Meet Me Halfway</strong> is a collaborative web application designed to help users find a convenient meeting location between two given points. It simplifies the process of selecting a midpoint location by providing suggestions based on predefined criteria, including distance and venue type (e.g., cafes, restaurants).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <p class="text-center">Feel free to reach out to me via email or through my social media channels for collaborations, projects, or inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Link to Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
